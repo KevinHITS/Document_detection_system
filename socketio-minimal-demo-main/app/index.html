@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Detection System</title>
+    <script defer src="app.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .upload-section { margin-bottom: 20px; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .detection-results { margin-top: 20px; }
+        .result-item { padding: 10px; margin: 5px 0; background: #f5f5f5; border-radius: 3px; }
+        .progress { background: #e0e0e0; border-radius: 10px; overflow: hidden; height: 20px; margin: 10px 0; }
+        .progress-bar { height: 100%; background: #4caf50; transition: width 0.3s; }
+        .status { font-weight: bold; }
+        .confidence { color: #666; }
+    </style>
+</head>
+<body>
+    <h1>Document Detection System</h1>
+    
+    <div class="upload-section">
+        <h3>Upload Document</h3>
+        <input type="file" id="fileInput" accept=".pdf,.png,.jpg,.jpeg,.bmp,.tiff,.gif">
+        <button id="uploadBtn">Upload & Analyze</button>
+    </div>
+
+
+
+    <div class="detection-results">
+        <h3>Detection Updates</h3>
+        <ul id="resultsList">
+        </ul>
+    </div>
+    
+</body>
+</html>
